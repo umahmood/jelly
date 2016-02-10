@@ -23,7 +23,7 @@ type Logger struct {
 	mutex   sync.Mutex
 }
 
-// NewLog constructs a new Logger log instance.
+// NewLog constructs a new Logger instance.
 func NewLog(logName string) (*Logger, error) {
 	if logName == "" {
 		return nil, ErrEmptyLogName
